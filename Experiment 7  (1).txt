@@ -1,0 +1,123 @@
+<!DOCTTYPE HTML>
+
+<HTML>
+
+<BODY>
+<h4>Timetable </h4>
+<table Border = "1">
+
+<tr>
+
+<th></th>
+
+<th>9:00 to 11:00</th>
+
+<th>11:15 to 12:15</th>
+
+<th>12:15 to 1:15</th>
+
+<th>1:15 to 2:00</th>
+
+<th>2:00 to 3:00</th>
+
+<th>3:00 to 4:00</th>
+
+</tr>
+
+<tr>
+
+<td>Monday</td>
+
+<td>AOOC</td>
+
+<td>MDM</td>
+
+<td>-</td>
+
+<td>DSL</td>
+
+<td>WD</td>
+
+<td>AT</td>
+
+</tr>
+
+<tr>
+
+<td>Tuesday</td>
+
+<td>AT</td>
+
+<td>DSL</td>
+
+<td>-</td>
+
+<td>AOOC</td>
+
+<td>-</td>
+
+<td>-</td>
+
+</tr>
+
+<tr>
+
+<td>Wednesday</td>
+
+<td>Aooc </td>
+
+<td>AT</td>
+
+<td>-</td>
+
+<td>MDM</td>
+
+<td>AT</td>
+
+<td>OEC II</td>
+
+</tr>
+
+
+
+
+<tr>
+<td>Thursday</td>
+
+<td>AT</td>
+
+<td>TPMS</td>
+
+<td>-</td>
+
+<td>AOOC</td>
+
+<td>ENV</td>
+
+<td>OEC II</td>
+
+</tr>
+
+<tr>
+
+<td>Friday</td>
+
+<td>AT</td>
+
+<td>AT</td>
+
+<td>-</td>
+
+<td>AOOC</td>
+
+<td>ENV</td>
+
+<td>WD</td>
+
+</tr>
+
+</table>
+
+</BODY>
+
+</HTML>
