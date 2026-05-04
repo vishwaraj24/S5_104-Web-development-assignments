@@ -1,123 +1,298 @@
-<!DOCTTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
 
-<HTML>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Tags</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            text-align: center;
+            padding: 30px;
+            animation: fadeIn 1.5s ease-in;
+            transition: background-color 0.5s ease;
+        }
 
-<BODY>
-<h4>Timetable </h4>
-<table Border = "1">
+        body:hover {
+            background-color: #e8eaed;
+        }
 
-<tr>
+        h1 {
+            color: #2c3e50;
+            animation: slideDown 1s ease;
+            transition: color 0.4s ease, text-shadow 0.4s ease;
+        }
 
-<th></th>
+        h1:hover {
+            color: #3498db;
+            text-shadow: 0 4px 8px rgba(52, 152, 219, 0.4);
+        }
 
-<th>9:00 to 11:00</th>
+        h2 {
+            color: #2c3e50;
+            animation: fadeInScale 1s ease backwards, rainbowText 3s linear infinite;
+            position: relative;
+            display: block;
+            padding-bottom: 15px;
+            margin: 20px 0;
+        }
 
-<th>11:15 to 12:15</th>
+        h2:nth-of-type(1) {
+            animation-delay: 0.3s, 0.3s;
+        }
 
-<th>12:15 to 1:15</th>
+        h2:nth-of-type(2) {
+            animation-delay: 0.6s, 0.6s;
+        }
 
-<th>1:15 to 2:00</th>
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+            animation: rainbowShift 2s linear infinite;
+            background-size: 200% 100%;
+        }
 
-<th>2:00 to 3:00</th>
+        h3 {
+            color: #34495e;
+            margin: 5px 0;
+            animation: slideInLeft 0.8s ease;
+            transition: all 0.4s ease;
+        }
 
-<th>3:00 to 4:00</th>
+        h3:hover {
+            color: #16a085;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            letter-spacing: 1px;
+            transform: translateX(10px);
+        }
 
-</tr>
+        h4 {
+            animation: fadeInUp 1s ease 0.5s backwards;
+            transition: all 0.4s ease;
+            padding: 10px;
+        }
 
-<tr>
+        h4:hover {
+            transform: scale(1.1);
+        }
 
-<td>Monday</td>
+        hr {
+            width: 50%;
+            border: 1px solid #bdc3c7;
+            margin: 20px auto;
+            animation: expandWidth 0.8s ease;
+            transition: all 0.5s ease;
+        }
 
-<td>AOOC</td>
+        hr:hover {
+            width: 70%;
+            border-color: #3498db;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+        }
 
-<td>MDM</td>
+        img {
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            animation: zoomIn 0.8s ease;
+        }
 
-<td>-</td>
+        img:hover {
+            transform: scale(1.1) rotate(2deg);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            filter: brightness(1.1) contrast(1.05);
+        }
 
-<td>DSL</td>
+        a {
+            display: block;
+            text-decoration: none;
+            color: #2980b9;
+            transition: all 0.4s ease;
+            animation: fadeInRight 0.8s ease;
+        }
 
-<td>WD</td>
+        a:hover {
+            color: #e74c3c;
+            text-shadow: 0 2px 6px rgba(231, 76, 60, 0.4);
+            transform: translateY(-3px);
+            text-decoration: underline;
+        }
 
-<td>AT</td>
+        footer {
+            margin-top: 30px;
+            animation: slideUp 1s ease;
+            transition: all 0.4s ease;
+            color: #7f8c8d;
+        }
 
-</tr>
+        footer:hover {
+            color: #2c3e50;
+            transform: translateY(-5px);
+        }
 
-<tr>
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
-<td>Tuesday</td>
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-<td>AT</td>
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
-<td>DSL</td>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-<td>-</td>
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
-<td>AOOC</td>
+        @keyframes expandWidth {
+            from {
+                width: 0%;
+                opacity: 0;
+            }
+            to {
+                width: 50%;
+                opacity: 1;
+            }
+        }
 
-<td>-</td>
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
 
-<td>-</td>
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
 
-</tr>
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-<tr>
+        @keyframes rainbowText {
+            0% {
+                color: #ff0000;
+            }
+            16% {
+                color: #ff7f00;
+            }
+            33% {
+                color: #ffff00;
+            }
+            50% {
+                color: #00ff00;
+            }
+            66% {
+                color: #0000ff;
+            }
+            83% {
+                color: #4b0082;
+            }
+            100% {
+                color: #9400d3;
+            }
+        }
 
-<td>Wednesday</td>
+        @keyframes rainbowShift {
+            0% {
+                background-position: 0% center;
+            }
+            100% {
+                background-position: 100% center;
+            }
+        }
+    </style>
+</head>
 
-<td>Aooc </td>
+<body>
+    <h1>Assignment 7</h1>
+    <hr>
+    <h3>Name : Vishwaraj Rajebhonsle </h3>
+    <h3>Division : A</h3>
+    <h3>Class : S. Y. B. Tech CSE</h3>
+    <h3>Batch : S5</h3>
+    <h3>Roll No. : 104</h3>
+    <hr>
+    <h2>Using Text</h2>
+    <h4><a href="https://www.google.com/">Click here to go to Google</a></h4>
+    <hr>
+    <h2>Using Image</h2>
+    <a href="https://www.google.com/">
+        <img src="https://drive.google.com/thumbnail?id=1Ku1u5n2P5KT8uu318uRZXmGbpgDcGAGA"
+            alt="Click to go to Google Search Engine">
+    </a>
+    <hr>
+    <footer>&copy; Prepared by <b>Vishwaraj Rajebhonsle</b>.
+    </footer>
+</body>
 
-<td>AT</td>
-
-<td>-</td>
-
-<td>MDM</td>
-
-<td>AT</td>
-
-<td>OEC II</td>
-
-</tr>
-
-
-
-
-<tr>
-<td>Thursday</td>
-
-<td>AT</td>
-
-<td>TPMS</td>
-
-<td>-</td>
-
-<td>AOOC</td>
-
-<td>ENV</td>
-
-<td>OEC II</td>
-
-</tr>
-
-<tr>
-
-<td>Friday</td>
-
-<td>AT</td>
-
-<td>AT</td>
-
-<td>-</td>
-
-<td>AOOC</td>
-
-<td>ENV</td>
-
-<td>WD</td>
-
-</tr>
-
-</table>
-
-</BODY>
-
-</HTML>
+</html>
