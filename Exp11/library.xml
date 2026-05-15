@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="library.css"?>
+
+<library>
+
+    <book>
+        <id>101</id>
+        <title>Web Development Basics</title>
+        <author>Akshay Patil</author>
+        <published_year>2022</published_year>
+        <available_copies>6</available_copies>
+    </book>
+
+    <book>
+        <id>102</id>
+        <title>Artificial Intelligence Guide</title>
+        <author>Aryan Sharma</author>
+        <published_year>2023</published_year>
+        <available_copies>4</available_copies>
+    </book>
+
+    <book>
+        <id>103</id>
+        <title>Modern Database Systems</title>
+        <author>Vishwajeet Parit</author>
+        <published_year>2021</published_year>
+        <available_copies>8</available_copies>
+    </book>
+
+    <book>
+        <id>104</id>
+        <title>Cyber Security Essentials</title>
+        <author>Swayam Jadhav</author>
+        <published_year>2020</published_year>
+        <available_copies>5</available_copies>
+    </book>
+
+    <book>
+        <id>105</id>
+        <title>Cloud Computing Concepts</title>
+        <author>Vishuu Kale</author>
+        <published_year>2024</published_year>
+        <available_copies>7</available_copies>
+    </book>
+
+    <book>
+        <id>106</id>
+        <title>Programming with Java</title>
+        <author>Prathamesh Pawar</author>
+        <published_year>2022</published_year>
+        <available_copies>3</available_copies>
+    </book>
+
+</library>
